@@ -24,7 +24,8 @@ namespace RWA2{
             // methods
             void start_charging();          // starts charging
             void discharge(double amount);      // reduces the current_charge_ attribute according to the amount
-            
+            int get_current_charge(){return current_charge_;}   // getter for the current_charge_ attribute
+
         private:
             // attributes
             std::string model_;     // Battery model name
